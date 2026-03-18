@@ -68,7 +68,7 @@ class lado(QWidget):
             hipotenusa = hipotenusa**0.5
             QMessageBox.information(self, 
             "✅ Resultados", 
-            f"Cateto A: {self.catetoa}\Cateto B: {self.catetob}\nHipotenusa: {hipotenusa:.2f}")
+            f"Cateto A: {self.catetoa}\nCateto B: {self.catetob}\nHipotenusa: {hipotenusa:.2f}")
         else:
             QMessageBox.warning(self, "Error", "Cateto a y Cateto b deben ser > 0")
 
@@ -79,9 +79,9 @@ class lado(QWidget):
         self.abrir_main_form.show()
 
     def volver_atras(self):
-        from menu_rectangulo_arv import menu_rectangulo
+        from menu_triangulo_arv import menu_triangulo
         self.hide()
-        self.abrir_main_form = menu_rectangulo()
+        self.abrir_main_form = menu_triangulo()
         self.abrir_main_form.show()
 
 

@@ -81,9 +81,9 @@ class Perimetro(QWidget):
         self.abrir_main_form.show()
 
     def volver_atras(self):
-        from menu_rectangulo_arv import menu_rectangulo
+        from menu_triangulo_arv import menu_triangulo
         self.hide()
-        self.abrir_main_form = menu_rectangulo()
+        self.abrir_main_form = menu_triangulo()
         self.abrir_main_form.show()
 
 
